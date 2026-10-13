@@ -1,13 +1,18 @@
 {
   "name": "discbeat",
+  "private": true,
   "version": "1.0.0",
-  "description": "DiscBeat App",
-  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'No build step needed'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
   }
 }
