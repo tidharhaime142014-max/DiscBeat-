@@ -1,0 +1,13 @@
+{
+  "name": "discbeat",
+  "version": "1.0.0",
+  "description": "DiscBeat App",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
