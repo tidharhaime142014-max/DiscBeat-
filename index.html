@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiscBeat</title>
+  <!-- חיבור קובץ ההגדרות של האפליקציה -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1db954">
+  
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>DiscBeat</h1>
+  <p>האפליקציה מוכנה להתקנה ומחוברת לענן!</p>
+
+  <script>
+    // רישום האפליקציה במכשיר של המשתמש
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
